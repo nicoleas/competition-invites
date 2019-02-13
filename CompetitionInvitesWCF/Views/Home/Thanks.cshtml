@@ -1,0 +1,37 @@
+﻿@model CompetitionInvitesWCF.Models.StudentResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Thanks</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
+<body class="text-center">
+    <div class="panel panel-info text-center">
+        <div class="panel-heading text-center">
+            <h5>Syed Tanbeer</h5>
+            <h3>Assignment 2</h3>
+            <h5>Nicole Armstrong-Smith</h5>
+            <h6>991391196</h6>
+        </div>
+    </div>
+    <p>
+        <h1>Thank you, @Model.Name!</h1>
+        @if (Model.WillAttend == true)
+            {
+            @:You were enrolled in the <technical interest> competition.
+        }
+            else
+            {
+            @:Sorry to hear that you can't make it, but thanks for letting us know.
+        }
+</p>
+        Click @Html.ActionLink("here", "ListResponse", "Home", null, null) to see who is coming.
+</body>
+</html>

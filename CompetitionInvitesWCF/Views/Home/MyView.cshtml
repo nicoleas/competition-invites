@@ -1,0 +1,28 @@
+﻿@{ //processes the contents of the view and generates HTML
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+</head>
+<body>
+    <div class="panel panel-info text-center">
+        <div class="panel-heading text-center">
+            <h5>Syed Tanbeer</h5>
+            <h3>Assignment 2</h3>
+            <h5>Nicole Armstrong-Smith</h5>
+            <h6>991391196</h6>
+        </div>
+        <div class="panel-body">
+            <h3>We're going to have an exciting party!</h3>
+            <h4>And you are invited</h4>
+            @Html.ActionLink("RSVP Now", "RsvpForm", "Home", null, new { @class = "btn btn-primary" })
+        </div>
+    </div>
+</body>
+</html>

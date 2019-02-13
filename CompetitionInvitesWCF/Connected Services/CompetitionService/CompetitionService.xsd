@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:51140/CompetitionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" />
+  <xs:element name="findAllStudent">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findAllStudentResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="findAllStudentResult" nillable="true" type="q1:ArrayOfStudent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findStudentId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findStudentIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="findStudentIdResult" nillable="true" type="q2:ArrayOfStudent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findAllAttend">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findAllAttendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="findAllAttendResult" nillable="true" type="q3:ArrayOfAttend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findAttendId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="findAttendIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="findAttendIdResult" nillable="true" type="q4:ArrayOfAttend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIntoDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="student" nillable="true" type="q5:Student" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/CompetitionInvitesWCFService" minOccurs="0" name="attend" nillable="true" type="q6:Attend" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InsertIntoDBResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
